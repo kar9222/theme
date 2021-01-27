@@ -1,0 +1,31 @@
+Package: theme
+Version: 0.2.0
+Title: Themes for ggplot2, Shiny, Rmarkdown, etc
+Description: Set ggplot theme and scales when package is attached, for convenience. Personalized themes, scales, theme switcher for Shiny, Rmarkdown, etc.
+Authors@R: person('Kar', role = c('aut', 'cre'), email = "first.last@example.com")
+URL: https://github.com/kar9222/theme
+BugReports: https://github.com/kar9222/theme/issues
+Depends: R (>= 3.1.0)
+Imports:
+    magrittr,
+    grDevices,
+    graphics,
+    ggplot2,
+Suggests:
+    ggdist,
+    ggdag,
+    plotly,
+    shiny,
+    shinyr,
+    htmltools,
+    viridisLite,
+    rlang,
+    knitr,
+    tinytest,
+    ttdo
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
