@@ -1,0 +1,74 @@
+---
+title: Test Shiny in Rmarkdown
+output: html_notebook
+runtime: shiny
+---
+
+[RMarkdown in Shiny Application](https://stackoverflow.com/questions/33499651/rmarkdown-in-shiny-application)
+
+[runtime: shiny` not compatible with bookdown cross-references #1063](https://github.com/rstudio/rmarkdown/issues/1063)
+
+TODO Why only `ggplotly` isn't required to be wrapped in `render***` ?
+
+```{r, echo = FALSE}
+suppressMessages({ suppressWarnings({
+  library(shiny)
+  library(ggplot2)
+  library(plotly)
+  library(theme)
+  library(shinyr)
+  library(data.table)
+})})
+```
+
+```{r}
+shiny::renderTable(head(mtcars))
+```
+
+```{r}
+# theme_switcher <- function (id = "theme_switcher") {
+#     # callModule(id = id, function(input, output, session) {
+#         observeEvent(input$theme, {
+#             output$theme_out <- renderUI({
+#                 theme::theme_switcher_shiny(theme = input$theme)
+#             })
+#         })
+#         theme_switcher_val <<- eventReactive(input$theme, input$theme)
+#     # })
+# }
+```
+
+```{r, echo = FALSE}
+# theme_switcher_rmd <- function() {
+#   {theme_switcher_in() ; theme_switcher_out() ; theme_switcher()}
+# }
+# theme_switcher_rmd()
+theme_switcher_in() ; theme_switcher_out() ; theme_switcher()
+
+selectInput('n_trace', 'Num of trace',
+            c(1, 2, 4, 6, 7, 10), selected = 4)
+renderPlotly({
+  dt <- data.table(txhousing)[city %in% unique(city)[1:input$n_trace]]
+  plot_ly(dt, x = ~date, y = ~median, color = ~city) %>%
+    add_lines() %>% rangeslider() %>% layout(title = 'abc')
+})
+```
+
+Note that the output format of the R Markdown document must be an HTML format. That is, the *document* should generate a web page (a *.html file). Non-HTML formats such as *pdf_document* and word_document will not work with the Shiny runtime. Please also note that some presentation formats are also *HTML* formats, such as `ioslides_presentation` and slidy_presentation.
+
+```{r}
+1+1
+```
+
+```{r}
+reactable::reactable(iris)
+```
+
+```{r}
+p <- ggplot(mpg, aes(displ, hwy, color = class)) + geom_point()
+renderPlot(p)
+```
+
+```{r}
+ggplotly()
+```

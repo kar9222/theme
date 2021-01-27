@@ -1,0 +1,23 @@
+# Title 1
+
+## Section 1
+
+```{r}
+library(reactable)
+
+reactable(iris,
+  searchable = TRUE, highlight = TRUE,
+  defaultPageSize = 100, paginationType = "numbers",
+  showPageSizeOptions = TRUE,
+  pageSizeOptions = c(2, 10, nrow(iris)), wrap = FALSE,
+  striped = TRUE,
+  # borderless  = TRUE,
+  # bordered = FALSE,
+  fullWidth = TRUE,
+  resizable = TRUE)
+```
+
+```{r}
+a <- 1
+a
+```

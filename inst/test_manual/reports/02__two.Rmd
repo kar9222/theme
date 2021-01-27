@@ -1,0 +1,12 @@
+# Title 2
+
+## Section 1
+
+```{r}
+library(ggplot2)
+library(ggdist)
+library(theme)
+
+x <- rnorm(10^3, 0, 1)
+ggplot() + stat_halfeye(aes(x))
+```

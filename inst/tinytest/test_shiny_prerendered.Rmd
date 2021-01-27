@@ -1,0 +1,29 @@
+---
+title: test
+runtime: shiny_prerendered
+---
+
+# Test `shiny_prerendered`
+
+```{r, echo=FALSE}
+theme_switcher_in() ; theme_switcher_out()
+```
+
+```{r, context='server'}
+theme_switcher()
+```
+
+```{r, echo=FALSE, cache = FALSE}
+# sliderInput("bins", "Number of bins:", min = 1, max = 50, value = 30)
+selectInput('n_trace', 'Num of trace',
+            c(1, 2, 4, 6, 7, 10), selected = 4)
+plotlyOutput('plot')
+```
+
+```{r, context='server', cache = FALSE}
+output$plot <- renderPlotly({
+  dt <- data.table(txhousing)[city %in% unique(city)[1:input$n_trace]]
+  plot_ly(dt, x = ~date, y = ~median, color = ~city) %>%
+    add_lines() %>% rangeslider()
+})
+```

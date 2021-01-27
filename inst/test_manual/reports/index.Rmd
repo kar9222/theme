@@ -1,0 +1,30 @@
+---
+title: 'Shiny RMarkdown'
+author: Kar
+runtime: shiny_prerendered
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    css: www/rmd.css
+---
+
+Generate rmd.css with `gosass -watch -input src/scss/ -output inst/test_manual/reports/www/`
+
+Run Shiny RMarkdown with
+- `rmarkdown::render('inst/test_manual/reports/index.Rmd')`
+- `rmarkdown::run('inst/test_manual/reports/index.Rmd')`
+
+
+```{r, echo = FALSE}
+# knitr::opts_chunk$set(cache = FALSE, autodep = FALSE)
+# knitr::opts_knit$set(root.dir = '../..')
+```
+
+```{r child = '01__one.Rmd'}
+```
+
+
+```{r child = '02__two.Rmd'}
+```

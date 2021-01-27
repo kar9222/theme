@@ -1,0 +1,25 @@
+# Test {RCall.jl}
+
+`julia --color=yes --sysimage ~/.julia/my_sysimg/my_sysimg.so`
+
+```{julia}
+using RCall
+@rlibrary ggplot2
+@rlibrary ggdist
+@rlibrary theme
+
+ggplot() + stat_halfeye(aes( rand(Normal(), 100) ))
+```
+
+
+`julia --color=yes --sysimage ~/.julia/sysimg_study/sysimg_study.so`
+
+```{julia}
+using RCall
+@rlibrary ggplot2
+@rlibrary ggdist
+# @rlibrary theme
+R"library(theme)"
+
+ggplot() + stat_halfeye(aes( rand(Normal(), 100) ))
+```
