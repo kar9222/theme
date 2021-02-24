@@ -52,6 +52,8 @@
 #' @param geom_area_col           (none)
 #' @param geom_area_fill          (none)
 #' @param geom_density_col        (none)
+#' @param geom_ribbon_fill        (none)
+#' @param geom_ribbon_alpha       (none)
 #' @param geom_text_col           (none)
 #' @param geom_slabinterval_fill  (none)
 #' @param geom_slabinterval_interval_colour (none)
@@ -141,22 +143,24 @@ theme_ggplot_raw <- function(
   # __ Geom ----------------------------------------
 
   # Low lvl `Geom*`
-  geom_bar_fill    = theme_vals('col_5_3'),
-  geom_col_col     = theme_vals('col_5_3'),
-  geom_col_fill    = theme_vals('col_5_3'),
+  geom_bar_fill     = theme_vals('col_5_3'),
+  geom_col_col      = theme_vals('col_5_3'),
+  geom_col_fill     = theme_vals('col_5_3'),
 
-  geom_point_col   = theme_vals('col'),
-  geom_line_col    = theme_vals('col'),
-  geom_smooth_col  = theme_vals('col'),
-  geom_smooth_fill = theme_vals('col_5'),
-  geom_area_col    = theme_vals('col_5_3'),
-  geom_area_fill   = theme_vals('col_5_3'),
-  geom_density_col = theme_vals('col'),
+  geom_point_col    = theme_vals('col'),
+  geom_line_col     = theme_vals('col'),
+  geom_smooth_col   = theme_vals('col'),
+  geom_smooth_fill  = theme_vals('col_5'),
+  geom_area_col     = theme_vals('col_5_3'),
+  geom_area_fill    = theme_vals('col_5_3'),
+  geom_density_col  = theme_vals('col'),
+  geom_ribbon_fill  = theme_vals('col_5'),
+  geom_ribbon_alpha = .3,
 
-  geom_hline_col   = theme_vals('col_2'),
-  geom_vline_col   = theme_vals('col_2'),
-  geom_segment_col = theme_vals('col_2'),
-  geom_text_col    = theme_vals('col_13'),
+  geom_hline_col    = theme_vals('col_2'),
+  geom_vline_col    = theme_vals('col_2'),
+  geom_segment_col  = theme_vals('col_2'),
+  geom_text_col     = theme_vals('col_13'),
 
   # {ggdist}
   geom_slabinterval_fill            = theme_vals('col_5_3'),
@@ -264,6 +268,8 @@ theme_ggplot_raw <- function(
   update_geom_defaults("area",   list(colour  = geom_area_col,
                                       fill    = geom_area_fill))
   update_geom_defaults("density", list(colour = geom_density_col))
+  update_geom_defaults("ribbon", list(fill = geom_ribbon_fill,
+                                      alpha = geom_ribbon_alpha))
 
   update_geom_defaults('hline',   list(colour = geom_hline_col))
   update_geom_defaults('vline',   list(colour = geom_vline_col))

@@ -43,6 +43,8 @@ expect_equal_xl(def_aes('smooth',  'fill'),   col('col_5'))
 expect_equal_xl(def_aes('area',    'colour'), col('col_5_3'))
 expect_equal_xl(def_aes('area',    'fill'),   col('col_5_3'))
 expect_equal_xl(def_aes('density', 'colour'), col('col'))
+expect_equal_xl(def_aes('ribbon',  'fill'),   col('col_5'))
+expect_equal_xl(def_aes('ribbon',  'alpha'),  .3)
 
 expect_equal_xl(def_aes('hline', 'colour'),   col('col_2'))
 expect_equal_xl(def_aes('vline', 'colour'),   col('col_2'))
