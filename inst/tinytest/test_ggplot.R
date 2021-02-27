@@ -46,8 +46,10 @@ expect_equal_xl(def_aes('density', 'colour'), col('col'))
 expect_equal_xl(def_aes('ribbon',  'fill'),   col('col_5'))
 expect_equal_xl(def_aes('ribbon',  'alpha'),  .3)
 
-expect_equal_xl(def_aes('hline', 'colour'),   col('col_2'))
-expect_equal_xl(def_aes('vline', 'colour'),   col('col_2'))
+expect_equal_xl(def_aes('hline', 'colour'),   col('col_5'))
+expect_equal_xl(def_aes('hline', 'linetype'), 'dashed')
+expect_equal_xl(def_aes('vline', 'colour'),   col('col_5'))
+expect_equal_xl(def_aes('vline', 'linetype'), 'dashed')
 expect_equal_xl(def_aes('segment', 'colour'), col('col_2'))
 expect_equal_xl(def_aes('text', 'colour'),    col('col_13'))
 

@@ -61,8 +61,10 @@
 #' @param geom_lineribbon_colour            (none)
 #' @param geom_dagedgepath_edge_colour      (none)
 #' @param geom_dagpoint_colour              (none)
-#' @param geom_hline_col          (none)
-#' @param geom_vline_col          (none)
+#' @param geom_hline_col                    (none)
+#' @param geom_hline_linetype               (none)
+#' @param geom_vline_col                    (none)
+#' @param geom_vline_linetype               (none)
 #' @param geom_segment_col        (none)
 #' @param plot_background         (none)
 #' @param plot_background_border  (none)
@@ -143,24 +145,26 @@ theme_ggplot_raw <- function(
   # __ Geom ----------------------------------------
 
   # Low lvl `Geom*`
-  geom_bar_fill     = theme_vals('col_5_3'),
-  geom_col_col      = theme_vals('col_5_3'),
-  geom_col_fill     = theme_vals('col_5_3'),
+  geom_bar_fill       = theme_vals('col_5_3'),
+  geom_col_col        = theme_vals('col_5_3'),
+  geom_col_fill       = theme_vals('col_5_3'),
 
-  geom_point_col    = theme_vals('col'),
-  geom_line_col     = theme_vals('col'),
-  geom_smooth_col   = theme_vals('col'),
-  geom_smooth_fill  = theme_vals('col_5'),
-  geom_area_col     = theme_vals('col_5_3'),
-  geom_area_fill    = theme_vals('col_5_3'),
-  geom_density_col  = theme_vals('col'),
-  geom_ribbon_fill  = theme_vals('col_5'),
-  geom_ribbon_alpha = .3,
+  geom_point_col      = theme_vals('col'),
+  geom_line_col       = theme_vals('col'),
+  geom_smooth_col     = theme_vals('col'),
+  geom_smooth_fill    = theme_vals('col_5'),
+  geom_area_col       = theme_vals('col_5_3'),
+  geom_area_fill      = theme_vals('col_5_3'),
+  geom_density_col    = theme_vals('col'),
+  geom_ribbon_fill    = theme_vals('col_5'),
+  geom_ribbon_alpha   = .3,
 
-  geom_hline_col    = theme_vals('col_2'),
-  geom_vline_col    = theme_vals('col_2'),
-  geom_segment_col  = theme_vals('col_2'),
-  geom_text_col     = theme_vals('col_13'),
+  geom_hline_col      = theme_vals('col_5'),
+  geom_hline_linetype = 'dashed',
+  geom_vline_col      = theme_vals('col_5'),
+  geom_vline_linetype = 'dashed',
+  geom_segment_col    = theme_vals('col_2'),
+  geom_text_col       = theme_vals('col_13'),
 
   # {ggdist}
   geom_slabinterval_fill            = theme_vals('col_5_3'),
@@ -271,10 +275,12 @@ theme_ggplot_raw <- function(
   update_geom_defaults("ribbon", list(fill = geom_ribbon_fill,
                                       alpha = geom_ribbon_alpha))
 
-  update_geom_defaults('hline',   list(colour = geom_hline_col))
-  update_geom_defaults('vline',   list(colour = geom_vline_col))
-  update_geom_defaults('segment', list(colour = geom_vline_col))
-  update_geom_defaults('text',    list(colour = geom_text_col))
+  update_geom_defaults('hline',   list(colour   = geom_hline_col,
+                                       linetype = geom_hline_linetype))
+  update_geom_defaults('vline',   list(colour   = geom_vline_col,
+                                       linetype = geom_vline_linetype))
+  update_geom_defaults('segment', list(colour   = geom_vline_col))
+  update_geom_defaults('text',    list(colour   = geom_text_col))
 
   # {ggdist} -------------------------------------
 
