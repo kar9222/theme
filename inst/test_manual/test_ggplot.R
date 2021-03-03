@@ -3,6 +3,7 @@
 library(ggplot2)
 library(workflow)
 library(theme)
+library(patchwork)
 
 # General ------------------------------------------
 
@@ -60,7 +61,7 @@ p3 <- ggplot(mtcars, aes(factor(cyl), fill = factor(vs))) + geom_bar()
 p4 <- ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster()
 
-library(patchwork) ; (p1 + p2) / (p3 + p4) ; p()
+(p1 + p2) / (p3 + p4) ; p()
 
 # `theme::geom_line` -----------------------------
 
@@ -93,10 +94,10 @@ subplot(nrows = 2, lapply(n_lvl, function(x) {
 library(ggplot2) ; library(theme) ; library(patchwork)
 theme::theme_ggplot_elegant_dark()
 
-p0 <- ggplot(mtcars, aes(mpg, wt))                                    
+p0 <- ggplot(mtcars, aes(mpg, wt))
 
 p1 <- ggplot(diamonds, aes(carat)) + geom_histogram()
-p2 <- ggplot(mtcars, aes(mpg, factor(disp))) + geom_col() 
+p2 <- ggplot(mtcars, aes(mpg, factor(disp))) + geom_col()
 p3 <- p0 + geom_point() + geom_smooth()
 p4 <- p0 + geom_line()
 (p1 + p2) / (p3 + p4)
@@ -135,3 +136,18 @@ shinyApp(
     )
   }
 )
+
+
+# _ Palette 'contrast' ---------------------------
+
+n <- 8
+d <- data.table(iris)[, Species := factor(sample(1:n, nrow(d), replace = TRUE))]
+
+p0 <- ggplot(d) + geom_point(aes(Sepal.Length, Sepal.Width, col = Species))
+pal <- function(n) scale_color_elegant_dark_d(palette = 'contrast', n = n)
+
+wrap_plots(ncol = 2,
+           p0 + pal(),
+           p0 + pal(3),
+           p0 + pal(n),
+           p0 + pal(800))

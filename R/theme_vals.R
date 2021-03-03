@@ -140,6 +140,17 @@ theme_vals_elegant_dark <- function(...) {
     'button_5'        = '#009987',
     'button_6'        = '#C8324D',
 
+    # ___ Contrast  -------------------------------
+
+    'contrast_1' = '#E6DB7F',
+    'contrast_2' = '#B8DDE6',
+    'contrast_3' = '#6E7C98',
+    'contrast_4' = '#DCE5EC',
+    'contrast_5' = '#FFA1AA',
+    'contrast_6' = '#E4CAAF',
+    'contrast_7' = '#303F9F',
+    'contrast_8' = '#BBC895',
+
     # ___ Shiny ---------------------------------
 
     'bg_box' = '#282C34',
@@ -272,6 +283,17 @@ pals_elegant_dark <- function(palette = 'main_light',
       'col_2_2',
       'col_4_2',
       'col_5'
+    ),
+    'contrast' = theme_vals_elegant_dark(
+
+      'contrast_1',
+      'contrast_2',
+      'contrast_3',
+      'contrast_4',
+      'contrast_5',
+      'contrast_6',
+      'contrast_7',
+      'contrast_8'
     ),
     'main_dark' = theme_vals_elegant_dark(
 
