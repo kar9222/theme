@@ -17,6 +17,6 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Kar Chua \email{karchua922@gmail.com}
+\strong{Maintainer}: Kar \email{first.last@example.com}
 
 }

@@ -31,8 +31,12 @@ theme_ggplot_raw(
   geom_area_col = theme_vals("col_5_3"),
   geom_area_fill = theme_vals("col_5_3"),
   geom_density_col = theme_vals("col"),
-  geom_hline_col = theme_vals("col_2"),
-  geom_vline_col = theme_vals("col_2"),
+  geom_ribbon_fill = theme_vals("col_5"),
+  geom_ribbon_alpha = 0.3,
+  geom_hline_col = theme_vals("col_5"),
+  geom_hline_linetype = "dashed",
+  geom_vline_col = theme_vals("col_5"),
+  geom_vline_linetype = "dashed",
   geom_segment_col = theme_vals("col_2"),
   geom_text_col = theme_vals("col_13"),
   geom_slabinterval_fill = theme_vals("col_5_3"),
@@ -94,9 +98,17 @@ theme_ggplot_raw(
 
 \item{geom_density_col}{(none)}
 
+\item{geom_ribbon_fill}{(none)}
+
+\item{geom_ribbon_alpha}{(none)}
+
 \item{geom_hline_col}{(none)}
 
+\item{geom_hline_linetype}{(none)}
+
 \item{geom_vline_col}{(none)}
+
+\item{geom_vline_linetype}{(none)}
 
 \item{geom_segment_col}{(none)}
 

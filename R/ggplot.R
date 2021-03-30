@@ -284,7 +284,9 @@ theme_ggplot_raw <- function(
 
   # {ggdist} -------------------------------------
 
-  if (requireNamespace('ggdist')) {
+  if (isNamespaceLoaded('ggdist')) {
+    library('ggdist')  # TODO Hacky solution for calling R in Julia
+
     update_geom_defaults('slabinterval', list(
       fill            = geom_slabinterval_fill,
       interval_colour = geom_slabinterval_interval_colour,
@@ -300,7 +302,9 @@ theme_ggplot_raw <- function(
 
   # {ggdag} --------------------------------------
 
-  if (requireNamespace('ggdag')) {
+  if (isNamespaceLoaded('ggdag')) {
+    library('ggdag')  # TODO Hacky solution for calling R in Julia
+
     update_geom_defaults(ggdag:::GeomDAGEdgePath,
       list(edge_colour = geom_dagedgepath_edge_colour))
     update_geom_defaults(ggdag:::GeomDagPoint,
