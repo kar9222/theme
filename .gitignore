@@ -1,6 +1,5 @@
 .Rhistory
 .RData
 .Rproj.user
-**/src/scss/_css
 dev/
-**/rmd.css
+inst/css/rmd.css
