@@ -177,6 +177,9 @@ For shared theme for `theme::ggplotly` & `theme::plotly`, use `theme::plotly_sha
 
 ## TODO
 
+TODO: # TODO Workaround for 'weird/smaller' text size in WSL2. It might be due to rendering of graphics device. See commit message 'Workaround for 'weird' text size in WSL2'
+- Details: Search `text = element_text(size = text_size)` of `theme_ggplot_raw`
+
 TODO: Customize {GGally}
 - [ggpairs plot with heatmap of correlation values](https://stackoverflow.com/questions/45873483/ggpairs-plot-with-heatmap-of-correlation-values)
 - [Nicer scatter plots in GGgally ggpairs-ggduo](http://genoweb.toulouse.inra.fr/~pmartin/pgpmartin/2018/11/14/nicer-scatterplot-in-gggally/)

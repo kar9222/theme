@@ -355,7 +355,12 @@ theme_ggplot_raw <- function(
     strip.text = element_text(
       color = strip_text,
       face  = strip_text_face
-    )
+    ),
+
+    # ___ Workaround -----------------------------
+
+    # TODO Workaround for 'weird/smaller' text size in WSL2. It might be due to rendering of graphics device.
+    text = element_text(size = 12),  # Original 11. See `theme_get()$text`
   ))
 }
 
