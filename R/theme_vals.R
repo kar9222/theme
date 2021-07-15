@@ -167,7 +167,7 @@ theme_vals_elegant_dark <- function(...) {
 
     # Nord: https://www.nordtheme.com/docs/colors-and-palettes
     'bg'                   = '#2E343F',
-    'fg'                   = '#ECEFF4',
+    'fg'                   = '#f9f5e8',
     'wild_blue'            = '#AAB9CD',
     'light_wild_blue'      = '#D8DEE9',
 
@@ -451,15 +451,16 @@ theme_vals_elegant_light <- function(...) {
 
     # Core
 
-    'bg'              = '#ECEFF4',
+    'bg'              = '#f9f5e8',
     'bg_2'            = '#FFFFFF',
-    'bg_3'            = '#ECEFF4',
+    'bg_3'            = '#f9f5e8',
 
     'fg'              = '#333333',
     'fg_2'            = '#000000',
     'fg_3'            = '#333333',
 
-    'col'             = '#051F9B',
+    'col'             = '#03224B',
+    # 'col'             = '#051F9B',
     # TODO Tmp swap 'col_2' & 'col_3' for {kar_capital}
     'col_2'           = '#009998',
     'col_3'           = '#E51947',
@@ -514,7 +515,7 @@ theme_vals_elegant_light <- function(...) {
 
     # ___ Shiny ---------------------------------
 
-    'bg_box' = '#ECEFF4',
+    'bg_box' = '#f9f5e8',
 
     # 'shiny_title_text' = '#999989',
 
