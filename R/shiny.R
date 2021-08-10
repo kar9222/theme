@@ -182,7 +182,7 @@ theme_shiny <- function(
   # __ General ----------------------------------
 
   app_font_family = 'Arial',
-  app_font = theme_vals('fg_3'),
+  app_font = theme_vals('fg'),
 
   primary_font = 'rgb(0,0,0)',
   info_font = 'rgb(0,0,0)',
@@ -235,7 +235,7 @@ theme_shiny <- function(
   sidebar_search_icon_col = theme_vals('col_5'),
   sidebar_search_border_col = theme_vals('bg_3'),
 
-  sidebar_tab_fg = theme_vals('fg_3'),
+  sidebar_tab_fg = theme_vals('fg'),
   sidebar_tab_text_size = 13,
   sidebar_tab_border_style = 'none none solid none',
   sidebar_tab_border_col = theme_vals('shiny_sidebar_border'),
@@ -284,7 +284,7 @@ theme_shiny <- function(
   button_border_col = theme_vals('bg_box'),
   button_border_radius = 0,
   button_hover_bg = theme_vals('hover_bg_2'),
-  button_hover_fg = theme_vals('fg_3'),
+  button_hover_fg = theme_vals('fg'),
   button_border_hover_col = theme_vals('bg_box'),
 
   # NOTE 'before' & 'after' are upside down?
@@ -314,13 +314,13 @@ theme_shiny <- function(
   # selectize_input_fg = theme_vals('fg'),
 
   selectize_dropdown_hover_bg = theme_vals('hover_bg_2'),
-  selectize_dropdown_hover_fg = theme_vals('fg_3'),
+  selectize_dropdown_hover_fg = theme_vals('fg'),
 
   selectize_dropdown_bg = theme_vals('bg'),
-  selectize_dropdown_fg = theme_vals('fg_3'),
+  selectize_dropdown_fg = theme_vals('fg'),
 
   selectize_dropdown_active_bg = theme_vals('hover_bg'),
-  selectize_dropdown_active_fg = theme_vals('fg_3'),
+  selectize_dropdown_active_fg = theme_vals('fg'),
 
   selectize_dropdown_highlight_bg = theme_vals('bg'),
   selectize_dropdown_highlight_fg = theme_vals('col_2'),
@@ -360,7 +360,7 @@ theme_shiny <- function(
 
   date_range_input_middle_button_fg = theme_vals('col_5'),
 
-  date_range_year_choices_fg = theme_vals('fg_3'),
+  date_range_year_choices_fg = theme_vals('fg'),
   date_range_year_choices_hover_bg = theme_vals('bg'),
 
   # __ reactable ---------------------------------
@@ -371,7 +371,7 @@ theme_shiny <- function(
   # __ My param ---------------------------------
 
   bg = theme_vals('bg'),
-  fg = theme_vals('fg_3'),
+  fg = theme_vals('fg'),
 
   # bg_2 = theme_vals('bg_2'),  # TODO: replaced by bg_3...redundant?
   fg_2 = theme_vals('fg_2'),
