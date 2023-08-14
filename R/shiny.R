@@ -367,6 +367,7 @@ theme_shiny <- function(
 
   reactable_bg = theme_vals('bg'),
   reactable_bg_strip = theme_vals('col_8'),
+  reactable_filter_border = theme_vals('col_5'),
 
   # __ My param ---------------------------------
 
@@ -1273,6 +1274,18 @@ theme_shiny <- function(
       .ReactTable .rt-tbody .rt-td {
         border-left: solid 1px ', border, ';
       }
+
+      /* reactable_filter */
+      .rt-filter {
+        background-color: ', reactable_bg, ';
+        color: ', button_fg, ';
+        border-color: ', reactable_filter_border, ';
+      }
+
+      .rt-filter:focus {
+        border-color: ', reactable_filter_border, ';
+      }
+
     '
   ))))
 }
