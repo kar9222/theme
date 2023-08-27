@@ -313,6 +313,9 @@ theme_shiny <- function(
   # selectize_input_bg = theme_vals('hover_bg'),
   # selectize_input_fg = theme_vals('fg'),
 
+  selectize_dropdown_header_fg =
+    theme_vals('shiny_selectize_dropdown_header_fg'),
+
   selectize_dropdown_hover_bg = theme_vals('hover_bg_2'),
   selectize_dropdown_hover_fg = theme_vals('fg'),
 
@@ -1010,6 +1013,12 @@ theme_shiny <- function(
       span.highlight {
           background: ', selectize_dropdown_highlight_bg, '!important;
           color: ', selectize_dropdown_highlight_fg, ';
+      }
+      .selectize-dropdown .optgroup-header {
+        background: ', selectize_input_bg, ';
+        color: ', selectize_dropdown_header_fg, ';
+        font-size: 110%;
+        border-bottom: solid 1px ', border, ';
       }
       .selectize-dropdown [data-selectable]:hover, .selectize-dropdown .optgroup-header:hover {
         background: ', selectize_dropdown_hover_bg, ';

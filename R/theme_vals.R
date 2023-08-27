@@ -163,6 +163,8 @@ theme_vals_elegant_dark <- function(...) {
 
     'shiny_box_shadow_bg' = '#262A30',
 
+    'shiny_selectize_dropdown_header_fg' = '#8299B6',
+
     # ___ Bookdown ------------------------------
 
     # Nord: https://www.nordtheme.com/docs/colors-and-palettes
