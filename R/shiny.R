@@ -175,7 +175,7 @@ theme_shiny <- function(
   logo_text_font_size = '25px !important',
   logo_text_font_style = 'italic',
 
-  transition = '.2s',
+  transition = '.1s',
 
   # Variable param ------------------------------
 
