@@ -309,6 +309,11 @@ pals_elegant_dark <- function(palette = 'main_light',
       'col_4_3',
       'col_5'
     ),
+    'yellow_grey_red' = theme_vals_elegant_dark(
+      'dash_red',
+      'col_5_2',
+      'col_2'
+    ),
     'green_grey_red' = theme_vals_elegant_dark(
       'dash_red',
       'col_5_2',
