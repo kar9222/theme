@@ -227,6 +227,8 @@ theme_vals_elegant_dark <- function(...) {
 
     # ___ Me ------------------------------
 
+    'red' = '#E95C6D',
+
     # search material design by #8299b6
     'my_wild_blue'         = '#b3c5db',
     'my_wild_gold'         = '#d8c4ab',
@@ -310,12 +312,12 @@ pals_elegant_dark <- function(palette = 'main_light',
       'col_5'
     ),
     'yellow_grey_red' = theme_vals_elegant_dark(
-      'dash_red',
+      'red',
       'col_5_2',
       'col_2'
     ),
     'green_grey_red' = theme_vals_elegant_dark(
-      'dash_red',
+      'red',
       'col_5_2',
       'dash_green'
     ),
