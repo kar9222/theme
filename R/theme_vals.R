@@ -72,6 +72,7 @@ theme_vals_elegant_dark <- function(...) {
     'col_5_2'         = '#434C5F', # L - 20
     'col_5_3'         = '#8299B6',
     'col_5_4'         = '#CBCDEE',
+    'col_5_5'         = '#DE8686',  # For plotting, which is also for Keyword col_4
     'col_6'           = '#909BB0',
 
     'col_7'           = '#bec5d3',
@@ -309,7 +310,7 @@ pals_elegant_dark <- function(palette = 'main_light',
 
       'col_2_3',
       'col_4_3',
-      'col_5'
+      'col_5_5'
     ),
     'yellow_grey_red' = theme_vals_elegant_dark(
       'red',
