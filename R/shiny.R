@@ -241,7 +241,7 @@ theme_shiny <- function(
   sidebar_tab_border_col = theme_vals('shiny_sidebar_border'),
   sidebar_tab_border_width = 1,
 
-  sidebar_tab_selected_bg = theme_vals('bg_3'),   # none
+  sidebar_tab_selected_bg = theme_vals('hover_bg'),
   sidebar_tab_selected_fg = theme_vals('selected_fg'),
   sidebar_tab_selected_radius = '0px 0px 0px 0px',
 
@@ -515,7 +515,9 @@ theme_shiny <- function(
       /* sidebar: tab selected */
       .skin-blue .main-sidebar .sidebar .sidebar-menu .active a {
         color: ', sidebar_tab_selected_fg, ';
+        background: ', sidebar_tab_selected_bg, ';
         font-size: ', sidebar_tab_text_size, 'px;
+        font-weight: bold;
         border-radius: ', sidebar_tab_selected_radius, ';
         border-style: ', sidebar_tab_border_hover_style, ';
         border-color: ', sidebar_tab_border_hover_col, ';
@@ -530,9 +532,10 @@ theme_shiny <- function(
 
       /* sidebar: tab hovered */
       .skin-blue .main-sidebar .sidebar .sidebar-menu a:hover {
-        background: ', sidebar_tab_hover_bg, ';'
-    ,'color: ', sidebar_tab_hover_fg, ';
+        background: ', sidebar_tab_hover_bg, ';
+        color: ', sidebar_tab_hover_fg, ';
         font-size: ', sidebar_tab_text_size ,'px;
+        font-weight: bold;
         border-style: ', sidebar_tab_border_hover_style, ';
         border-color: ', sidebar_tab_border_hover_col, ';
         border-width: ', sidebar_tab_border_hover_width, 'px;

@@ -98,12 +98,12 @@ theme_vals_elegant_dark <- function(...) {
     'selection_2'     = '#1F454F',
 
     'selected_bg'     = '#31343E', # prev #44475a TODO
-    'selected_fg'     = '#c7c7bf',
+    'selected_fg'     = '#E6DB7F',
 
     'hover_bg'        = '#2d3039', # prev #313341 TODO
     'hover_bg_2'      = '#31343F',
     'hover_bg_3'      = '#323642',
-    'hover_fg'        = '#c7c7bf',
+    'hover_fg'        = '#E6DB7F',
     'hover_bg_table'  = '#333841',
 
     'border'          = '#31343E', # prev #313341 TODO
