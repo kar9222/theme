@@ -283,8 +283,8 @@ theme_shiny <- function(
   button_fg = theme_vals('shiny_box_content_fg'),
   button_border_col = theme_vals('bg_box'),
   button_border_radius = 0,
-  button_hover_bg = theme_vals('hover_bg_2'),
-  button_hover_fg = theme_vals('fg'),
+  button_hover_bg = theme_vals('hover_bg'),
+  button_hover_fg = theme_vals('hover_fg'),
   button_border_hover_col = theme_vals('bg_box'),
 
   # NOTE 'before' & 'after' are upside down?
@@ -316,14 +316,14 @@ theme_shiny <- function(
   selectize_dropdown_header_fg =
     theme_vals('shiny_selectize_dropdown_header_fg'),
 
-  selectize_dropdown_hover_bg = theme_vals('hover_bg_2'),
-  selectize_dropdown_hover_fg = theme_vals('fg'),
-
   selectize_dropdown_bg = theme_vals('bg'),
   selectize_dropdown_fg = theme_vals('fg'),
 
+  selectize_dropdown_hover_bg = theme_vals('hover_bg'),
+  selectize_dropdown_hover_fg = theme_vals('hover_fg'),
+
   selectize_dropdown_active_bg = theme_vals('hover_bg'),
-  selectize_dropdown_active_fg = theme_vals('fg'),
+  selectize_dropdown_active_fg = theme_vals('hover_fg'),
 
   selectize_dropdown_highlight_bg = theme_vals('bg'),
   selectize_dropdown_highlight_fg = theme_vals('col_2'),

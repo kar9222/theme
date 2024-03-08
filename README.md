@@ -261,7 +261,6 @@ col_9, col_10, col_11, col_12 - line colors
 col_13_* - Gold color (ie tmux's status bar for git)
 
 hover_bg   - | bg +/- 5
-hover_bg_2 - Shiny hover input  |  hover_bg +/- 5
 hover_bg_3 - RStudio: Find in files, jobs  |  selection +/- 20
 hover_fg_2 - Header hover
 hover_bg_table - | bg +/- 1

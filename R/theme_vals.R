@@ -100,7 +100,6 @@ theme_vals_elegant_dark <- function(...) {
     'selected_fg'     = '#E6DB7F',
 
     'hover_bg'        = '#2d3039', # prev #313341 TODO
-    'hover_bg_2'      = '#31343F',
     'hover_bg_3'      = '#323642',
     'hover_fg'        = '#E6DB7F',
     'hover_bg_table'  = '#333841',
@@ -505,7 +504,6 @@ theme_vals_elegant_light <- function(...) {
     'selected_fg'     = '#009998',
 
     'hover_bg'        = '#E6EAF0',
-    'hover_bg_2'      = '#DFE4ED',
     'hover_fg'        = '#009998',
     'hover_bg_table'  = '#EBEEF3',
 
@@ -673,7 +671,6 @@ theme_vals_elegant_light_2 <- function(...) {
     'selected_fg'     = '#009998',
 
     'hover_bg'        = '#EEF4F6',
-    'hover_bg_2'      = '#E7F0F3',
     'hover_fg'        = '#009998',
     'hover_bg_table'  = '#F3F8F9',
 
