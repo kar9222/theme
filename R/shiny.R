@@ -1238,7 +1238,7 @@ theme_shiny <- function(
           background: ', reactable_bg, ';
       }
 
-      .rt-tr-striped-sticky:hover {
+      .rt-tr-highlight-sticky:hover {
           background: ', hover_bg_table, ';
       }
 
