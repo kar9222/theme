@@ -1234,6 +1234,14 @@ theme_shiny <- function(
           border-color: ', border, ';
       }
 
+      .rt-tr-striped-sticky {
+          background: ', reactable_bg, ';
+      }
+
+      .rt-tr-striped-sticky:hover {
+          background: ', hover_bg_table, ';
+      }
+
       /* reactable_header_border_btm */
       .rt-td {
         border-top: 1px solid ', border, ';
