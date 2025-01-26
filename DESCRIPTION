@@ -1,5 +1,5 @@
 Package: theme
-Version: 0.3.5
+Version: 0.3.6
 Title: Themes for ggplot2, Shiny, Rmarkdown, etc
 Description: Set ggplot theme and scales when package is attached, for convenience. Personalized themes, scales, theme switcher for Shiny, Rmarkdown, etc.
 Authors@R: person('Kar', role = c('aut', 'cre'), email = "first.last@example.com")

@@ -369,7 +369,7 @@ theme_shiny <- function(
   # __ reactable ---------------------------------
 
   reactable_bg = theme_vals('bg'),
-  reactable_bg_strip = theme_vals('col_8'),
+  reactable_bg_strip = theme_vals('hover_bg'),
   reactable_filter_border = theme_vals('col_5'),
 
   # __ My param ---------------------------------
