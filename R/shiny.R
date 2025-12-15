@@ -1272,6 +1272,7 @@ theme_shiny <- function(
       /* reactable_highlight */
       .rt-tr-group:hover {
           background: ', hover_bg_table, ';
+          color: ', hover_fg, ';
       }
 
       /* reactable_pagination_select */
