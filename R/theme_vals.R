@@ -46,10 +46,10 @@ theme_vals_elegant_dark <- function(...) {
 
     # Core
 
-    'bg'              = '#282F31',    # prev #282a36 TODO
-    'bg_2'            = '#282F31',    # L - 3,
+    'bg'              = '#212121',    # prev #282a36 TODO
+    'bg_2'            = '#212121',    # L - 3,
     # 'bg_2'            = '#262A32',    # L - 2, blue-er
-    'bg_3'            = '#282F31',
+    'bg_3'            = '#212121',
 
     'fg'              = '#f8f8f2',
     'fg_2'            = '#f8f8f2',
@@ -99,10 +99,10 @@ theme_vals_elegant_dark <- function(...) {
     'selected_bg'     = '#31343E', # prev #44475a TODO
     'selected_fg'     = '#E6DB7F',
 
-    'hover_bg'        = '#313A3D', # prev #313341 TODO
+    'hover_bg'        = '#2D2D2D', # prev #313341 TODO
     'hover_bg_3'      = '#323642',
     'hover_fg'        = '#E6DB7F',
-    'hover_bg_table'  = '#313A3D',
+    'hover_bg_table'  = '#2D2D2D',
 
     'border'          = '#31343E', # prev #313341 TODO
     'border_2'        = '#393E4D', # prev #393C4D TODO
@@ -152,7 +152,7 @@ theme_vals_elegant_dark <- function(...) {
 
     # ___ Shiny ---------------------------------
 
-    'bg_box' = '#282F31',
+    'bg_box' = '#212121',
 
     # 'shiny_title_text' = '#8299B6',
 
@@ -160,7 +160,7 @@ theme_vals_elegant_dark <- function(...) {
 
     'shiny_box_content_fg' = '#E6DB7F',
 
-    'shiny_box_shadow_bg' = '#282F31',
+    'shiny_box_shadow_bg' = '#212121',
 
     'shiny_selectize_dropdown_header_fg' = '#8299B6',
 
@@ -535,7 +535,7 @@ theme_vals_elegant_light <- function(...) {
 
     'shiny_box_content_fg' = '#009998',
 
-    'shiny_box_shadow_bg' = '#282F31'
+    'shiny_box_shadow_bg' = '#212121'
   )
 
   # Extract vals ------------------------------
@@ -702,7 +702,7 @@ theme_vals_elegant_light_2 <- function(...) {
 
     'shiny_box_content_fg' = '#009998',
 
-    'shiny_box_shadow_bg' = '#282F31'
+    'shiny_box_shadow_bg' = '#212121'
   )
 
   # Extract vals ------------------------------
