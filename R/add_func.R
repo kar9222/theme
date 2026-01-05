@@ -61,7 +61,7 @@ geom_line <- function(..., max_n_colors = 6) {
         {
           if ( ! is.null(color_label))
             match.fun(
-              paste0('scale_color_', theme, '_', 'scale_type')
+              paste0('scale_color_', theme, '_', scale_type)
             )(palette = 'line', n = n_trace_color)
           else NULL
         }
