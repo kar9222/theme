@@ -51,8 +51,8 @@ theme_vals_elegant_dark <- function(...) {
     # 'bg_2'            = '#262A32',    # L - 2, blue-er
     'bg_3'            = '#212121',
 
-    'fg'              = '#f8f8f2',
-    'fg_2'            = '#f8f8f2',
+    'fg'              = '#D9D0B4',  # Pale gold, contrast 10.45
+    'fg_2'            = '#D9D0B4',  # Pale gold, contrast 10.45
     'fg_3'            = '#D8DEE9',
     'fg_4'            = '#E5E9F0',
 
