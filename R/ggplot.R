@@ -149,13 +149,13 @@ theme_ggplot_raw <- function(
   geom_col_col        = theme_vals('col_5_3'),
   geom_col_fill       = theme_vals('col_5_3'),
 
-  geom_point_col      = theme_vals('col'),
-  geom_line_col       = theme_vals('col'),
-  geom_smooth_col     = theme_vals('col'),
-  geom_smooth_fill    = theme_vals('col_5'),
+  geom_point_col      = theme_vals('col_2'),  # prev col
+  geom_line_col       = theme_vals('col_2'),  # prev col
+  geom_smooth_col     = theme_vals('col_2'),  # prev col
+  geom_smooth_fill    = theme_vals('col_2'),  # prev col_5
   geom_area_col       = theme_vals('col_5_3'),
   geom_area_fill      = theme_vals('col_5_3'),
-  geom_density_col    = theme_vals('col'),
+  geom_density_col    = theme_vals('col_2'),  # prev col
   geom_ribbon_fill    = theme_vals('col_5'),
   geom_ribbon_alpha   = .3,
 
@@ -192,29 +192,29 @@ theme_ggplot_raw <- function(
 
   # __ Title, caption, etc ----------------------
 
-  title         = theme_vals('col_7'),
-  plot_subtitle = theme_vals('col_7'),
-  plot_caption  = theme_vals('col_5'),
-  plot_tag      = theme_vals('col_5'),
+  title         = theme_vals('fg'),  # prev col_7
+  plot_subtitle = theme_vals('fg'),  # prev col_7
+  plot_caption  = theme_vals('fg'),  # prev col_5
+  plot_tag      = theme_vals('fg'),  # prev col_5
 
   # __ Axis -------------------------------------
 
   # axis_line  = theme_vals('col_5'),
   axis_line  = theme_vals('border'),
-  axis_title = theme_vals('col_7'),
-  axis_text  = theme_vals('col_7'),
-  axis_ticks = theme_vals('col_5'),
+  axis_title = theme_vals('fg'),  # prev col_7
+  axis_text  = theme_vals('fg'),  # prev col_7
+  axis_ticks = theme_vals('fg'),  # prev col_5
 
   # __ Legend -----------------------------------
 
-  legend_title = theme_vals('col_7'),
-  legend_text  = theme_vals('col_7'),
+  legend_title = theme_vals('fg'),  # prev col_7
+  legend_text  = theme_vals('fg'),  # prev col_7
 
   # __ Strip ------------------------------------
 
   strip_background        = theme_vals('selection'),
   strip_background_border = theme_vals('selection'),
-  strip_text              = theme_vals('col_7')
+  strip_text              = theme_vals('fg')  # prev col_7
 ) {
 
   # Theme ------------------------------------------

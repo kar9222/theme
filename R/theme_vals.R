@@ -58,10 +58,10 @@ theme_vals_elegant_dark <- function(...) {
 
     'col'             = '#DCE5EC',
     'col_1_2'         = '#DBE0FC',  # prev #D9DEFF
-    'col_2'           = '#E6DB7F',
+    'col_2'           = '#EEDB5C',
     'col_2_2'         = '#EDE6A1',
     'col_2_3'         = '#F3EEC3',
-    'col_3'           = '#E6DB7F',
+    'col_3'           = '#EEDB5C',
     'col_4'           = '#B8DDE6',
     'col_4_try_rmd'   = '#BADBE6',
     # 'col_4'           = '#B5E0E6', # prev  '#FFA1AA',
@@ -70,7 +70,7 @@ theme_vals_elegant_dark <- function(...) {
 
     'col_5'           = '#6E7C98',
     'col_5_2'         = '#434C5F', # L - 20
-    'col_5_3'         = '#8299B6',
+    'col_5_3'         = '#B9A978',  # prev #8299B6
     'col_5_4'         = '#CBCDEE',
     'col_6'           = '#909BB0',
 
@@ -104,7 +104,7 @@ theme_vals_elegant_dark <- function(...) {
     'hover_fg'        = '#CC99FF',
     'hover_bg_table'  = '#2D2D2D',
 
-    'border'          = '#31343E', # prev #313341 TODO
+    'border'          = '#262626', # prev #313341 TODO
     'border_2'        = '#393E4D', # prev #393C4D TODO
 
     'scrollbar'       = '#393E4D',
@@ -141,14 +141,14 @@ theme_vals_elegant_dark <- function(...) {
 
     # ___ Contrast  -------------------------------
 
-    'contrast_1' = '#E6DB7F',
-    'contrast_2' = '#B8DDE6',
-    'contrast_3' = '#6E7C98',
+    'contrast_1' = '#EEDB5C',
+    'contrast_2' = '#CC99FF',
+    'contrast_3' = '#34A0A8',
     'contrast_4' = '#DCE5EC',
-    'contrast_5' = '#FFA1AA',
-    'contrast_6' = '#E4CAAF',
-    'contrast_7' = '#303F9F',
-    'contrast_8' = '#BBC895',
+    'contrast_5' = '#FF6575',
+    'contrast_6' = '#3262FF',
+    'contrast_7' = '#FF9F1C',
+    'contrast_8' = '#6796CF',
 
     # ___ Shiny ---------------------------------
 
@@ -235,7 +235,7 @@ theme_vals_elegant_dark <- function(...) {
     'my_wild_red'          = '#b68299',
     # 'my_wild_purple'     = '#8582b6',
 
-    'elegant_yellow'       = '#E6DB7F',
+    'elegant_yellow'       = '#EEDB5C',
     'elegant_green'        = '#B2E3E7',
     'elegant_wild_blue'    = '#8299B6',
     'elegant_dark_yellow'      = '#cead00',

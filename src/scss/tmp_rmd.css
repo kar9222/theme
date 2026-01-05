@@ -72,7 +72,7 @@ a {
   font-style: italic; }
 
 a:hover, a:visited:hover {
-  color: #E6DB7F;
+  color: #EEDB5C;
   transition: 0.3s;
   text-decoration: none; }
 
@@ -83,7 +83,7 @@ a:visited {
   color: #f8f8f2; }
 
 .hljs-number {
-  color: #E6DB7F; }
+  color: #EEDB5C; }
 
 .hljs-comment {
   color: #6E7C98;
@@ -93,11 +93,11 @@ a:visited {
   color: #BADBE6; }
 
 .hljs-string {
-  color: #E6DB7F; }
+  color: #EEDB5C; }
 
 pre:not([class]) {
   background: none;
-  color: #E6DB7F; }
+  color: #EEDB5C; }
 
 /* Scrollbar --------------------------------- */
 /* total width */
@@ -149,7 +149,7 @@ pre:not([class]) {
   /* ahk ruler: ~ 29, prev 3.5%; */
   width: 50px;
   /* ahk ruler: ~ 41, prev 5.5% */
-  border: solid 3px #E6DB7F;
+  border: solid 3px #EEDB5C;
   position: fixed;
   top: 7px;
   right: 20px;
@@ -166,7 +166,7 @@ pre:not([class]) {
   /* prev bottom: 880px; */
   right: 39px;
   /* prev left: 175px; */
-  background-color: #E6DB7F;
+  background-color: #EEDB5C;
   content: "";
   transition: .4s; }
 
@@ -616,7 +616,7 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
       /* button */
       .btn-default {
         background: #282C34;
-        color: #E6DB7F;
+        color: #EEDB5C;
         border-color: #282C34;
         border-radius: 0px;
         height: 34px;
@@ -633,21 +633,21 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
       /* button: focus */
       .btn-default:focus, .action-button:focus {
         background: #282C34!important;
-        color: #E6DB7F!important;
+        color: #EEDB5C!important;
         border-color: #282C34;
       }
 
       /* button: active */
       .btn-default:active, .action-button:active {
         background: #282C34;
-        color: #E6DB7F;
+        color: #EEDB5C;
         border-color: #282C34;
       }
 
       /* button: visited */
       .btn-default:visited {
         background: #282C34;
-        color: #E6DB7F;
+        color: #EEDB5C;
         border-color: #282C34;
       }
 
@@ -840,12 +840,12 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
       }
       .selectize-input {
         background: #282C34 !important;
-        color: #E6DB7F !important;
+        color: #EEDB5C !important;
       }
       /* not sure why `.selectize-input` not working */
         .selectize-input > * {
           background: #282C34 !important;
-          color: #E6DB7F !important;
+          color: #EEDB5C !important;
         }
       .selectize-dropdown {
         border: solid 1px #31343E;
@@ -857,7 +857,7 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
       /* selectize_dropdown_highlight */
       span.highlight {
           background: #282C34!important;
-          color: #E6DB7F;
+          color: #EEDB5C;
       }
       .selectize-dropdown [data-selectable]:hover, .selectize-dropdown .optgroup-header:hover {
         background: #31343F;
@@ -912,7 +912,7 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
 
         /* date_range_input_fg */
         .input-daterange input {
-            color: #E6DB7F;
+            color: #EEDB5C;
         }
 
         /* or this ? .datepicker-dropdown */
@@ -924,24 +924,24 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
       /* active */
           .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active:active {
             background-color: #282C34;
-          color: #E6DB7F;
+          color: #EEDB5C;
         }
       /* hover */
             .datepicker table tr td:hover, .datepicker table tr th:hover {
           background: #282C34 !important;
-            color: #E6DB7F;
+            color: #EEDB5C;
         }
       /* active: others */
           .datepicker table tr td span.active.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover.active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active:hover:active {
           background-color: #282C34;
-            color: #E6DB7F;
+            color: #EEDB5C;
             border-color: none;
         }
       /* hover: others */
         /* element overrule by above...hence using same `color` */
           .datepicker table tr td span.focused, .datepicker table tr td span:hover {
           background: #282C34;
-          color: #E6DB7F;
+          color: #EEDB5C;
         }
       /* unavailable date */
         .datepicker table tr td.new, .datepicker table tr td.old {
@@ -955,7 +955,7 @@ button.btn.btn-default.btn-xs.dropdown-toggle {
           border: none;
         }
       .skin-blue .sidebar-form input[type=text] {
-        color: #E6DB7F !important;
+        color: #EEDB5C !important;
       }
       section.sidebar .shiny-bound-input.action-button, section.sidebar .shiny-bound-input.action-link {
         background: #282C34 !important;

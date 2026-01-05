@@ -92,8 +92,8 @@
   $code-keyword-font-weight: normal;
   $code-func-color:          #DCE5EC;
 
-  $code-string-color:  #E6DB7F;
-  $code-numeric-color: #E6DB7F;
+  $code-string-color:  #EEDB5C;
+  $code-numeric-color: #EEDB5C;
 
   $code-comment-color:   #6E7C98;
   $code-comment-color-2: #434C5F;
@@ -272,7 +272,7 @@ pre:not([class]) {
 
   height: 34px;    /* ahk ruler: ~ 29, prev 3.5%; */
   width: 50px;    /* ahk ruler: ~ 41, prev 5.5% */
-  border: solid 3px #E6DB7F;
+  border: solid 3px #EEDB5C;
 
   position: fixed;
   top: 7px;
@@ -293,7 +293,7 @@ pre:not([class]) {
   top: 11px;   /* prev bottom: 880px; */
   right: 39px;   /* prev left: 175px; */
 
-  background-color: #E6DB7F;
+  background-color: #EEDB5C;
   content: "";
   transition: .4s;
 }
